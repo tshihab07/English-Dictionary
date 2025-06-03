@@ -17,7 +17,7 @@ def transalate(word, data):
                 result = data[closest_match[0]]
             
             elif user_confirmation == "n":
-                result = "The word doesn't exist. Please double check it."
+                result = "The word doesn't exist. Please double-check it."
             
             else:
                 result = "We didn't understand your entry. Please try again."
