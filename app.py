@@ -8,7 +8,7 @@ def transalate(word, data):
     
     else:
         filtered_data = list(filter(lambda x: x.startswith(word[0]), data.keys()))
-        closest_match = difflib.get_close_matches(word, filtered_data)
+        closest_match = difflib.get_close_matches(word, filtered_data)           #  get closest match from the data set
         
         if len(closest_match) > 0:
             user_confirmation = input(f"Did you mean {closest_match[0]} instead? Enter Y if yes, or N if no: ").lower()
